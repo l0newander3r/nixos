@@ -31,6 +31,11 @@ in {
       statix
     ];
 
+    programs.nix-index = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+
     programs.home-manager.enable = true;
 
     programs.direnv = {

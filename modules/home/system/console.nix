@@ -30,6 +30,8 @@ in {
 
     programs.zsh = {
       enable = true;
+      enableCompletion = true;
+
       enableVteIntegration = config.lonewanderer.profiles.desktop.enable;
       shellAliases = {
         erase = "shred -f -n 5 -u -z";
