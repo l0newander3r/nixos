@@ -17,8 +17,12 @@ in {
 
   config = {
     home.packages = with pkgs; [
+      # Sops support
       age
       sops
+      ssh-to-pgp
+
+      # Password generation
       diceware
       pwgen
       rng-tools
