@@ -17,6 +17,8 @@ in {
 
   config = {
     home.packages = with pkgs; [
+      age
+      sops
       diceware
       pwgen
       rng-tools
