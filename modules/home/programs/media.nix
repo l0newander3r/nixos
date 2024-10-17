@@ -10,6 +10,7 @@ in {
   imports = [
     (import ./media/mpd.nix args)
     (import ./media/mpv.nix args)
+    (import ./media/spotify.nix args)
   ];
 
   options.lonewanderer.programs.media = {};
