@@ -140,7 +140,7 @@ in {
             "QT_QPA_PLATFORMTHEME,qt5ct"
 
             # HiDPI XWayland
-            "GDK_SCALE,2"
+            "GDK_SCALE,1.2"
             "XCURSOR_SIZE,32"
           ]
           ++ lists.optionals config.lonewanderer.hardware.video.nvidia.enable [
