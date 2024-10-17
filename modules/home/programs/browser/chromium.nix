@@ -15,7 +15,7 @@ in {
 
     package = mkOption {
       type = types.package;
-      default = pkgs.chromium;
+      default = pkgs.chromium.override {enableWideVine = true;};
     };
   };
 
