@@ -17,8 +17,6 @@ in {
   };
 
   config = mkIf cfg.enable {
-    programs.command-not-found.enable = true;
-
     programs.ssh.extraConfig = ''
       Host github.com
         ForwardAgent yes
