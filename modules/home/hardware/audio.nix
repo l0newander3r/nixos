@@ -2,6 +2,7 @@ args @ {
   lib,
   config,
   options,
+  pkgs,
   ...
 }:
 with lib; let
@@ -14,6 +15,9 @@ in {
   };
 
   config = mkIf cfg.enable {
+    home.packages = with pkgs; [
+      pavucontrol
+    ];
     services.easyeffects.enable = config.lonewanderer.profiles.desktop.enable;
   };
 }
