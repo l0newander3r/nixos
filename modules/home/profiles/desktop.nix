@@ -36,11 +36,12 @@ in {
 
     lonewanderer.programs.desktop = {
       enable = true;
+      ags.enable = mkDefault true;
       gtk.enable = mkDefault true;
       hypridle.enable = mkDefault true;
       hyprland.enable = mkDefault true;
       hyprlock.enable = mkDefault true;
-      hyprpanel.enable = mkDefault true;
+      hyprpanel.enable = mkDefault false;
       hyprpaper.enable = mkDefault true;
       xdg.enable = mkDefault true;
       xdg.enableUserDirs = mkDefault true;

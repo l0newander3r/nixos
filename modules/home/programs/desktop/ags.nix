@@ -20,6 +20,10 @@ in {
   };
 
   config = mkIf (config.lonewanderer.programs.desktop.enable && cfg.enable) {
+    lonewanderer.programs.desktop.hyprland = {
+      widgets = getExe pkgs.ags;
+    };
+
     programs.ags = {
       enable = true;
       extraPackages = with pkgs; [
@@ -29,7 +33,6 @@ in {
         libnotify
         upower
       ];
-      systemd.enable = true;
     };
   };
 }
