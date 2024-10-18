@@ -15,6 +15,7 @@ in {
     (import ./desktop/hyprland.nix args)
     (import ./desktop/hyprlock.nix args)
     (import ./desktop/hypridle.nix args)
+    (import ./desktop/hyprpanel.nix args)
     (import ./desktop/xdg.nix args)
   ];
 

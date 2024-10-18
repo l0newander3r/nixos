@@ -51,6 +51,11 @@ in {
       default = "keepassxc";
     };
 
+    widgets = mkOption {
+      type = types.str;
+      default = "";
+    };
+
     windowrule = mkOption {
       type = with types; listOf str;
       default = [];
@@ -116,6 +121,7 @@ in {
         "$terminal" = cfg.terminal;
         "$vault" = cfg.vault;
         "$lock" = "loginctl lock-session";
+        "$widgets" = cfg.widgets;
 
         windowrule = cfg.windowrule;
         windowrulev2 = cfg.windowrulev2;
@@ -158,6 +164,7 @@ in {
 
         exec-once = [
           "hyprctl setcursor ${theme.cursor.name} ${toString theme.cursor.size}"
+          "$widgets"
           "$terminal"
           "$browser"
           "$vault"

@@ -315,11 +315,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1729171802,
-        "narHash": "sha256-Eip3uI+XeyAfBoQXpkm/F7eG3M7AgvzSyhyJdzxVt74=",
+        "lastModified": 1729258007,
+        "narHash": "sha256-48B9JVEhQ4zHxE0ak50QDnkC6C+R74Bm/md397tXhXM=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "9c1a1c7df49a9b28539ccb509b36d0b81e41391c",
+        "rev": "cb93ab1c990c5719ec199e8c397e688de06cb46d",
         "type": "github"
       },
       "original": {
@@ -328,24 +328,26 @@
         "type": "github"
       }
     },
-    "home-manager_2": {
+    "hyprpanel": {
       "inputs": {
+        "ags": [
+          "ags"
+        ],
         "nixpkgs": [
-          "stylix",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1724435763,
-        "narHash": "sha256-UNky3lJNGQtUEXT2OY8gMxejakSWPTfWKvpFkpFlAfM=",
-        "owner": "nix-community",
-        "repo": "home-manager",
-        "rev": "c2cd2a52e02f1dfa1c88f95abeb89298d46023be",
+        "lastModified": 1729148918,
+        "narHash": "sha256-XvhalnbI7U/SYKuB69CNMsoWH/++UATXxKrFl8vqNB8=",
+        "owner": "Jas-SinghFSU",
+        "repo": "HyprPanel",
+        "rev": "166120f603a2e5291c0b6e6f5413281a6f6edaa2",
         "type": "github"
       },
       "original": {
-        "owner": "nix-community",
-        "repo": "home-manager",
+        "owner": "Jas-SinghFSU",
+        "repo": "HyprPanel",
         "type": "github"
       }
     },
@@ -455,6 +457,7 @@
       "inputs": {
         "ags": "ags",
         "home-manager": "home-manager",
+        "hyprpanel": "hyprpanel",
         "lanzaboote": "lanzaboote",
         "lf-icons": "lf-icons",
         "nixpkgs": "nixpkgs",
@@ -518,7 +521,9 @@
         "flake-compat": "flake-compat_3",
         "flake-utils": "flake-utils_3",
         "gnome-shell": "gnome-shell",
-        "home-manager": "home-manager_2",
+        "home-manager": [
+          "home-manager"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ],
