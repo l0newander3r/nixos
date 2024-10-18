@@ -315,39 +315,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1729258007,
-        "narHash": "sha256-48B9JVEhQ4zHxE0ak50QDnkC6C+R74Bm/md397tXhXM=",
+        "lastModified": 1729260213,
+        "narHash": "sha256-jAvHoU/1y/yCuXzr2fNF+q6uKmr8Jj2xgAisK4QB9to=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "cb93ab1c990c5719ec199e8c397e688de06cb46d",
+        "rev": "09a0c0c02953318bf94425738c7061ffdc4cba75",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
         "repo": "home-manager",
-        "type": "github"
-      }
-    },
-    "hyprpanel": {
-      "inputs": {
-        "ags": [
-          "ags"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1729148918,
-        "narHash": "sha256-XvhalnbI7U/SYKuB69CNMsoWH/++UATXxKrFl8vqNB8=",
-        "owner": "Jas-SinghFSU",
-        "repo": "HyprPanel",
-        "rev": "166120f603a2e5291c0b6e6f5413281a6f6edaa2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Jas-SinghFSU",
-        "repo": "HyprPanel",
         "type": "github"
       }
     },
@@ -457,7 +434,6 @@
       "inputs": {
         "ags": "ags",
         "home-manager": "home-manager",
-        "hyprpanel": "hyprpanel",
         "lanzaboote": "lanzaboote",
         "lf-icons": "lf-icons",
         "nixpkgs": "nixpkgs",

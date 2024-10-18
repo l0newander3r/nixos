@@ -26,13 +26,7 @@ in {
 
     programs.ags = {
       enable = true;
-      extraPackages = with pkgs; [
-        libsoup_3
-        libdbusmenu-gtk3
-        power-profiles-daemon
-        libnotify
-        upower
-      ];
+      extraPackages = with pkgs; [];
     };
   };
 }

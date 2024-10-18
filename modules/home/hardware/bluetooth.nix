@@ -17,6 +17,10 @@ in {
   };
 
   config = mkIf cfg.enable {
-    home.packages = with pkgs; [overskride];
+    home.packages = with pkgs; [
+      overskride
+      bluez
+      bluez-tools
+    ];
   };
 }
