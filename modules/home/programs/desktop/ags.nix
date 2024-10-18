@@ -21,7 +21,7 @@ in {
 
   config = mkIf (config.lonewanderer.programs.desktop.enable && cfg.enable) {
     lonewanderer.programs.desktop.hyprland = {
-      widgets = getExe pkgs.ags;
+      widgets = mkDefault (getExe pkgs.ags);
     };
 
     programs.ags = {
